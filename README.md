@@ -12,35 +12,20 @@ The attacking player notes the hit or miss on their own tracking grid, in order 
 
 When all of one player's ships have been hit the game finishes and the player who has ships remaining is the winner.
 
+Team 
+-----------
+This was written by:
+* Andrew Snead (github: [snozza](https://github.com/snozza))
+* James Carter (github: [jamesacarter](https://github.com/jamesascarter))
+* Nicole Pellicena Tredway (github: [NicolePell](https://github.com/NicolePell))
+* Sandrine Zhang Ferron (github: [MadameSandrine](https://github.com/MadameSardine))
+* Yvette Cook (github: [yvettecook](https://github.com/yvettecook))
 
-##CRC Modelling
 
-###Player (ship, board)
--------------------
-* has boards
-* has ships?
-* places ships on board
-* shoots at the board
+##Tools Used
+* Ruby 
+* RSpec
+* IRB
+* Terminal Tables (ruby gem: can be found [here](https://github.com/visionmedia/terminal-table))
+* GitHub 
 
-###Ship (board, player, cell)
----------------------------
-* can be hit 			
-* can sink 				
-
-###Cell (ship, board)
---------------------
-* knows if it has a ship 				   
-* knows when it is shot but empty (miss)  
-* knows when it is shot and has a ship (hit) 
-* knows if it is empty 
-
-###Board (player, cell, ship)
----------------------------
-* has cells and knows their coordinates
-* has to validate coordinates
-* reports victory
-* displays when a ship is sunk
-* checks and tells a cell when it is hit
-* checks and tells a cell when it it has a ship
-* displays a hit
-* displays a miss

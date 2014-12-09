@@ -22,13 +22,13 @@ class Cell
     raise "Cell already shot" if status != :empty 
     miss if !ship
     hit if ship
-    return @status
+    puts "#{@status.upcase} !!!"
   end
 
-  def indicator
+  def to_s
+     return '#' if status != :hit && ship
      return MARKER[:hit] if @status == :hit
      return MARKER[:miss] if @status == :miss 
      return MARKER[:empty] if @status == :empty
-     return '#' if @status != :hit && :ship
   end
 end

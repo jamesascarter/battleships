@@ -27,10 +27,10 @@ describe Cell do
 			expect{cell.miss}.to change{cell.status}.to :miss
 		end
 
-		it "indicator should return 'X' when hit" do
+		it "to_s should return 'X' when hit" do
 			cell.ship = patrolboat
 			cell.hit
-			expect(cell.indicator).to eq('X')
+			expect(cell.to_s).to eq('X')
 		end
 	end
 

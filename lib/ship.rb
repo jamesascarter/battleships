@@ -19,23 +19,23 @@ class Ship
 	end
 
 	def self.aircraftcarrier
-		new(5, :aircraftcarrier, 0)
+		new(5, "aircraftcarrier", 0)
 	end
 
 	def self.battleship
-		new(4, :battleship, 0)
+		new(4, "battleship", 0)
 	end
 	
 	def self.submarine
-		new(3, :submarine, 0)
+		new(3, "submarine", 0)
 	end	
 
 	def self.destroyer
-		new(3, :destroyer, 0)
+		new(3, "destroyer", 0)
 	end
 
 	def self.patrolboat
-		new(2, :patrolboat, 0)
+		new(2, "patrolboat", 0)
 	end
 
 end

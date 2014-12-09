@@ -9,6 +9,7 @@ describe Ship do
 	let (:destroyer) {Ship.destroyer} 
 	let (:patrolboat) {Ship.patrolboat}
 
+
 	context "On initialize a ship" do
 
 		it "should have a size" do
@@ -30,6 +31,10 @@ describe Ship do
 		it "should raise an error if wrong number of argument" do
 			expect{Ship.new(4, :not_a_ship)}.to raise_error(ArgumentError)
 		end
+
+		it "should have a name" do
+			expect(battleship.name).to eq("battleship")
+		end	
 	end
 
 	context "During the game a ship" do
